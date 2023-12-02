@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> My baby </title>
+
+  </head>
+  <body>
+   
+    <div class="glitch-wrapper">
+        <div class="glitch" data-glitch="meoooooowwvirus detected">meoooooowwvirus detected</div>
+     </div>
+     
+     <style>
+     .glitch-wrapper {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color: #ffebbe;
+     }
+     
+     .glitch {
+        position: relative;
+        font-size: 60px;
+        font-weight: 700;
+        line-height: 1.2;
+        color: #fff;
+        letter-spacing: 4px;
+        z-index: 1;
+     }
+     
+     .glitch:before,
+     .glitch:after {
+        display: block;
+        content: attr(data-glitch);
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0.8;
+     }
+     
+     .glitch:before {
+        animation: glitch-color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+        color: #0ff;
+        z-index: -1;
+     }
+     
+     .glitch:after {
+        animation: glitch-color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+        color: #ff00ff;
+        z-index: -2;
+     }
+     
+     @keyframes glitch-color {
+        0% {
+           transform: translate(0);
+        }
+     
+        20% {
+           transform: translate(-3px, 3px);
+        }
+     
+        40% {
+           transform: translate(-3px, -3px);
+        }
+     
+        60% {
+           transform: translate(3px, 3px);
+        }
+     
+        80% {
+           transform: translate(3px, -3px);
+        }
+     
+        to {
+           transform: translate(0);
+        }
+     }
+     </style>
+
+    <div>
+       <video class="elgato" src="panic.mp4" width="200px" loop autoplay></video>
+
+    </div>
+
+    <div>
+      <a href="fourth.html" target="_self">
+      <button> Fix It </button>
+      </a>
+      <a href="selfdestruct.html" target="_self">
+      <button class="nooo"> kill kitty </button>
+      </a>
+
+    </div>
+
+
+
+  </body>
+
+
+</html>

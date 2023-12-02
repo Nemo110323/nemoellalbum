@@ -1,0 +1,115 @@
+nav{
+    background-color: teal; 
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 15px 25px;
+    box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.8);
+
+}
+
+.circular-photo{
+    border-radius: 50%;
+
+}
+
+.hometitle{
+    display: inline-block;
+    margin: 0;
+    color: white;
+    font-family: Verdana;
+    font-variant: small-caps;
+    position: relative;
+    bottom: 15px;
+    left: 15px;
+
+}
+
+.dinosaur{
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.links-container{
+    float: right;
+    position: relative;
+    top: 15px;
+    padding-right: 100px;
+
+}
+
+body {
+    margin: 0%;
+    background-color: #ffa07a;
+    
+}
+
+.link{
+    color: aliceblue;
+    text-decoration: none;
+    font-family: Verdana;
+    margin: 0 25px;
+    transition: 0.5s;
+
+}
+
+.link:hover{
+    color: goldenrod;
+}
+
+.btn-link{
+    background-color: goldenrod;
+    padding: 10px 25px;
+    font-family: Verdana;
+    text-decoration: none;
+    border-radius: 15px;
+    color: aliceblue;
+    transition: 0.3s;
+
+}
+
+.btn-link:hover{
+    padding: 10px 35px;
+}
+
+.post-image img {
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.header img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.albumcontainer{
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+    margin-top: 10%;
+    font-family: Arial, sans-serif;
+        
+}
+
+.username {
+    font-weight: bold;
+}
+
+.post-image img {
+    width: 100%;
+}
+
+.caption,.time,.likes,.comments{
+    padding: 10px;
+
+}

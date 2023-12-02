@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> monthsary </title>
+
+  </head>
+  <body>
+
+    <div id="countdown-text"><h3>Scanniiiiiiiing...</h3></div>
+
+  <script>
+    
+    const countdownDuration = 10000; 
+
+    const countdownText = document.getElementById('countdown-text');
+
+    
+    setTimeout(() => {
+      
+      countdownText.textContent = 'Scan Complete!';
+    }, countdownDuration);
+
+    countdownText.style.fontFamily = 'Verdana'
+    countdownText.style.fontVariant = 'small-caps'
+    countdownText.style.margin = '1%'
+    countdownText.style.fontWeight = 'bold'
+  </script>
+
+    <div>
+       <video class="elgato" src="loading.mp4" width="200px" loop autoplay></video>
+
+    </div>
+
+    <a href="third.html" target="_self">
+    <button id="myButton" style="display: none;">Continue</button>
+    </a>
+  <script>
+    
+    const myButton = document.getElementById('myButton');
+
+    const delayInMilliseconds = 10000; 
+    
+    setTimeout(() => {
+      myButton.style.display = 'block'; 
+    }, delayInMilliseconds);
+
+    myButton.style.textAlign = 'center'
+    myButton.style.marginLeft = '46%'
+  </script>
+
+    
+
+
+  </body>
+
+
+</html>
